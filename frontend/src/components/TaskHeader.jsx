@@ -8,10 +8,6 @@ const TaskHeader = ({ setAddModalOpen }) => {
                     <h3 className='md:text-3xl text-xl font-bold'>00</h3>
                     <h6 className='md:text-xl text-sm font-semibold text-center'>Task Created</h6>
                 </div>
-                <div className='flex flex-col items-center justify-center border rounded bg-[#f39d0a] text-white md:p-4 p-2'>
-                    <h3 className='md:text-3xl text-xl font-bold'>00</h3>
-                    <h6 className='md:text-xl text-sm font-semibold text-center'>Task Processing</h6>
-                </div>
                 <div className='flex flex-col items-center justify-center border rounded bg-[#2acd72] text-white md:p-4 p-2'>
                     <h3 className='md:text-3xl text-xl font-bold'>00</h3>
                     <h6 className='md:text-xl  text-sm font-semibold text-center'>Task Completed</h6>

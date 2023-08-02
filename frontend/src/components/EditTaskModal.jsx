@@ -55,7 +55,6 @@ const EditTaskModal = ({ isOpen, onClose }) => {
                     <label htmlFor="status" className='text-sm font-semibold'>Update Status</label>
                     <select id="status" className='py-1 px-2 focus:outline-none border border-slate-800' defaultValue={status.toLowerCase()} onChange={(e) => setStatus(e.target.value)}>
                         <option value="">Select Status</option>
-                        {status !== "Processing" && <option value="processing">Under Process</option>}
                         <option value="completed">Completed</option>
                     </select>
                 </div>

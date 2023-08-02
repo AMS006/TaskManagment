@@ -54,13 +54,6 @@ const TaskTable = ({ setEditModalOpen, setDeleteMoalOpen }) => {
       status: "Completed",
       createdAt: "2023-08-22"
 
-    },
-    {
-      title: "Task 2",
-      description: "I Need to do a task",
-      status: "Processing",
-      createdAt: "2023-08-22"
-
     }
   ]
   const customStyles = {

@@ -10,7 +10,7 @@ const AlertModal = ({ isOpen, onClose }) => {
     return (
         <Modal isOpen={isOpen} onClose={onClose}>
             <h3 className='font-semibold text-xl pb-2.5'>Delete Task</h3>
-            <p>Are you Sure you want to delete <b>{task.title}</b></p>
+            {task && task.title && <p>Are you Sure you want to delete <b>{task.title}</b></p>}
 
             <div className='flex justify-end gap-2 pt-2'>
                 <button onClick={onClose} className='px-2 py-1 border border-slate-800 rounded'>Cancel</button>
