@@ -18,9 +18,10 @@ app.use(cors({
 }))
 
 // Connection with Mongo Database
-mongoose.connect(process.env.MONGO_URL).then(()=>{
+mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true
+}).then(()=>{
     console.log("Database connected")
 }).catch(() =>{
     console.log("Database connection failed")
