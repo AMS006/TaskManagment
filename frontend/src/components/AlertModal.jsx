@@ -1,11 +1,18 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { toast } from 'react-toastify'
+import { deleteTask } from '../redux/actions/task'
 import Modal from './Modal'
 
 const AlertModal = ({ isOpen, onClose }) => {
     const task = useSelector((state) => state.task.currentTask)
+    const dispatch = useDispatch()
     const handleDelete = () => {
-
+        if (task) {
+            dispatch(deleteTask(task))
+            toast.success("Task Deleted")
+            onClose()
+        }
     }
     return (
         <Modal isOpen={isOpen} onClose={onClose}>
