@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 import SignIn from '../components/SignIn'
 import SignUp from '../components/SignUp';
-import Layout from '../layout'
 import Loading from '../components/Loading';
+import Layout from '../Layout';
+
 
 const AuthPage = () => {
     const [tab, setTab] = useState("signin");

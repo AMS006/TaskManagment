@@ -9,7 +9,7 @@ import AlertModal from '../components/AlertModal'
 import ViewTaskModal from '../components/ViewTaskModal'
 import Loading from '../components/Loading'
 import { getAllTasks } from '../redux/actions/task'
-import Layout from '../layout'
+import Layout from '../Layout'
 
 const Taskpage = () => {
 
