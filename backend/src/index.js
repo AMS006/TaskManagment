@@ -11,7 +11,10 @@ env.config()
 app.use(express.json())
 
 app.use(cors({
-    origin:'*'
+    origin:'https://task-managment-tan.vercel.app/',
+    methods: ['GET', 'PUT', 'POST','DELETE'], 
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-csrf-token'], 
+    credentials: true
 }))
 
 // Connection with Mongo Database
