@@ -5,7 +5,7 @@ export const signIn = (data) => async (dispatch) => {
   try {
     const user = await axios({
       method: "POST",
-      url: "https://breakable-vest-newt.cyclic.cloud/user/signin",
+      url: "https://task-managment-g6ma.onrender.com/user/signin",
       data,
     });
     axios.defaults.headers.common[
@@ -25,7 +25,7 @@ export const signUp = (data) => async (dispatch) => {
   try {
     const user = await axios({
       method: "POST",
-      url: "https://breakable-vest-newt.cyclic.cloud/user/signup",
+      url: "https://task-managment-g6ma.onrender.com/user/signup",
       data,
     });
     axios.defaults.headers.common[
@@ -47,7 +47,7 @@ export const getUserDetail = (data) => async (dispatch) => {
 
     const user = await axios({
       method: "GET",
-      url: "https://breakable-vest-newt.cyclic.cloud/user",
+      url: "https://task-managment-g6ma.onrender.com/user",
     });
 
     dispatch(userSuccess(user.data));
