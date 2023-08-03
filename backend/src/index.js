@@ -1,6 +1,7 @@
 const express = require('express')
 const env = require('dotenv')
 const cors = require('cors')
+const helmet = require('helmet')
 const mongoose = require('mongoose')
 const user = require('./routes/user')
 const task = require('./routes/task')
@@ -10,7 +11,9 @@ env.config()
 
 app.use(express.json())
 
+app.use(helmet())
 app.use(cors())
+
 
 // Connection with Mongo Database
 mongoose.connect(process.env.MONGO_URL,{
