@@ -5,7 +5,6 @@ import SignUp from '../components/SignUp';
 import Loading from '../components/Loading';
 import Layout from '../Layout';
 
-
 const AuthPage = () => {
     const [tab, setTab] = useState("signin");
     const { loading } = useSelector((state) => state.user)

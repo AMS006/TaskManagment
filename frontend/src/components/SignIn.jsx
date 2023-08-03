@@ -53,7 +53,7 @@ const SignIn = ({ setTab }) => {
                         <input type="password" value={password} name="password" placeholder='Enter Your password' disabled={isSigning} className='w-full h-full px-2 py-2 border-l focus:outline-none' id="password" required onChange={(e) => setPassword(e.target.value)} />
                     </div>
                     <div className={`bg-slate-800 text-white py-2 shadow rounded-full ${isSigning ? 'opacity-70 cursor-not-allowed' : ''}`}>
-                        <input type="submit" value={`${isSigning ? 'Signing...' : 'Sign Up'}`} disabled={isSigning} className={`h-full w-full cursor-pointer ${isSigning ? 'opacity-70 cursor-not-allowed' : ''}`} />
+                        <input type="submit" value={`${isSigning ? 'Signing...' : 'Sign In'}`} disabled={isSigning} className={`h-full w-full cursor-pointer ${isSigning ? 'opacity-70 cursor-not-allowed' : ''}`} />
                     </div>
                     <div className='text-slate-900 font-semibold text-center'>
                         <button className='cursor-pointer hover:underline' disabled={isSigning} onClick={() => setTab("signup")}>Don't Have Account? Sign Up with us</button>
