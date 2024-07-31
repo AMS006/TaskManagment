@@ -59,6 +59,7 @@ exports.signUp = async (req, res) => {
     const token = user.generateJwtToken();
     return res.status(201).json({ user, token });
   } catch (error) {
+    console.log(error,"Error in signup");
     return res.status(500).json({ message: "Some thing gone wrong" });
   }
 };
